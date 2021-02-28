@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">Electro Calcul</string>
     <string name="titre">Calcul electronique</string>
+    <string name="titreLed">Calcul resistance pour une led</string>
     <string name="activite1">Filtre passe-bas</string>
     <string name="activite2">Led - Resistance</string>
+    <string name="inputLed">Saisir le voltage</string>
+    <string name="outputLed">Valeur de la resistence</string>
+    <string name="actionLed">Calcul de la resistance</string>
 </resources>

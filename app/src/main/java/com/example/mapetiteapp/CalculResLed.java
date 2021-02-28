@@ -1,0 +1,16 @@
+package com.example.mapetiteapp;
+
+public class CalculResLed {
+    /*
+        Pour le calcul d'une résistance d'une led, on considere sa tension de fonctionnement à 2.2 Volt
+        et son intensité à 20mA
+         */
+    private static float intensite = 0.02f;
+    private static float voltLed = 2.2f;
+
+    static float calculResistance(float voltSysteme){
+        float resistance = 0;
+        resistance = (voltSysteme - CalculResLed.voltLed) / CalculResLed.intensite;
+        return resistance;
+    }
+}

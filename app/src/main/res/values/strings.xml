@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Ma petite App</string>
+    <string name="app_name">Electro Calcul</string>
     <string name="titre">Calcul electronique</string>
     <string name="activite1">Filtre passe-bas</string>
     <string name="activite2">Led - Resistance</string>

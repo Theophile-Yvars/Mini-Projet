@@ -11,6 +11,8 @@
     <string name="inputAop1">Saisir valeur</string>
     <string name="inputAop2">Saisir valeur</string>
     <string name="outputAop">Resultat</string>
+    <string name="textAop">Saisir elements de l\'aop</string>
+    <string name="actionAop">Calcul de l\'AOP</string>
 
     <string-array name="choix_Aop">
         <item>R1</item>

@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button buttonFiltre = findViewById(R.id.button1);
         Button buttonLed = findViewById(R.id.button2);
+        Button buttonAop = findViewById(R.id.button3);
 
         buttonFiltre.setOnClickListener(this::filtre);
         buttonLed.setOnClickListener(this::led);
@@ -36,6 +37,11 @@ public class MainActivity extends AppCompatActivity {
      */
     void led(View sender){
         Intent ledActivity = new Intent(getApplicationContext(),Led.class);
+        startActivity(ledActivity);
+    }
+
+    void aop(View sender){
+        Intent ledActivity = new Intent(getApplicationContext(),Aop.class);
         startActivity(ledActivity);
     }
 }

@@ -10,4 +10,11 @@
     <string name="actionLed">Calcul de la resistance</string>
     <string name="inputAop1">Saisir valeur</string>
     <string name="inputAop2">Saisir valeur</string>
+    <string name="outputAop">Resultat</string>
+
+    <string-array name="choix_Aop">
+        <item>R1</item>
+        <item>R2</item>
+        <item>Gain</item>
+    </string-array>
 </resources>

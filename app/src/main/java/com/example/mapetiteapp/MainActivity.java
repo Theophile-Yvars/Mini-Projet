@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         buttonFiltre.setOnClickListener(this::filtre);
         buttonLed.setOnClickListener(this::led);
+        buttonAop.setOnClickListener(this::aop);
     }
 
     /*
@@ -41,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void aop(View sender){
-        Intent ledActivity = new Intent(getApplicationContext(),Aop.class);
-        startActivity(ledActivity);
+        Intent aopActivity = new Intent(getApplicationContext(),Aop.class);
+        startActivity(aopActivity);
     }
 }

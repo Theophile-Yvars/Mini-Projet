@@ -11,6 +11,9 @@ import android.net.Uri;
 
 public class MainActivity extends AppCompatActivity {
 
+    /*
+    Image Boutton pour aller sur le play store
+     */
     ImageButton buttonPlayStore;
 
     @Override
@@ -18,14 +21,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        /*
+        Création des 3 bouttons pour les 3 activités.
+         */
         Button buttonFiltre = findViewById(R.id.button1);
         Button buttonLed = findViewById(R.id.lien);
         Button buttonAop = findViewById(R.id.button3);
 
+        /*
+        Affectation des fonctions à chacun des bouttons.
+         */
         buttonFiltre.setOnClickListener(this::filtre);
         buttonLed.setOnClickListener(this::led);
         buttonAop.setOnClickListener(this::aop);
 
+        /*
+        Affectation la fonction pour aller sur le play store
+         */
         this.buttonPlayStore = findViewById(R.id.lienPlay);
         this.buttonPlayStore.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,15 +63,22 @@ public class MainActivity extends AppCompatActivity {
         startActivity(ledActivity);
     }
 
+    /*
+    Fonction qui execute l'activité du calcul d'Aop'
+     */
     void aop(View sender){
         Intent aopActivity = new Intent(getApplicationContext(),Aop.class);
         startActivity(aopActivity);
     }
 
+    /*
+    Fonction qui ouvre le play store
+     */
     public void  openPlayStore()  {
+        // Adresse cible
         String url="https://play.google.com/store/search?q=electronique";
 
-        // An implicit intent, request a URL.
+        // Intent implicite. Va à l'adresse cible
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
         this.startActivity(intent);
     }

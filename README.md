@@ -27,7 +27,7 @@ Dans le main, on peut choisir quelque calcul electronuique on veut faire. On peu
 
 ### Calcul d'un filtre passe-Bas
 
-<div style="text-align:center"><img src="https://user-images.githubusercontent.com/79571637/109723757-d26fcb80-7bae-11eb-837b-31d24a973c8d.jpg" width="200"></div>
+<img align="center" src="https://user-images.githubusercontent.com/79571637/109723757-d26fcb80-7bae-11eb-837b-31d24a973c8d.jpg" width="200">
 
 L'utilisateur peut entré les informations de 2 éléments sur 3. L'application se charge de faire les calculs pour trouver le 3 élémenents. On peut choisir de saisir la résistance, la capacité et/ou le fréquence de coupure du filtre.
 

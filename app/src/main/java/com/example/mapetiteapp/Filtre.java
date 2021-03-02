@@ -26,7 +26,7 @@ public class Filtre extends AppCompatActivity {
     Element du filtre passe bas
      */
     float r;
-    float C;
+    double C;
     float Fc;
 
     /*
@@ -130,14 +130,14 @@ public class Filtre extends AppCompatActivity {
             if (pos1 == 1)
                 r = val1;
             if (pos1 == 2)
-                C = val1;
+                C = (double) (val1 * 0.000001);
             if (pos1 == 3)
                 Fc = val1;
 
             if (pos2 == 1)
                 r = val2;
             if (pos2 == 2)
-                C = val2;
+                C = (double) (val2 * 0.000001);
             if (pos2 == 3)
                 Fc = val2;
 

@@ -18,7 +18,7 @@ public class CalculFiltre {
     /*
     Calcul de R
      */
-    static float calculR(float C, float fc){
+    static float calculR(double C, float fc){
         float R;
         R = (float) (1 / (2*C*fc*PI));
         return R;
@@ -36,7 +36,7 @@ public class CalculFiltre {
     /*
     Calcul de Fc
      */
-    static float calculFc(float R, float C){
+    static float calculFc(float R, double C){
         float fc;
         fc = (float) (1 / (2*PI*R*C));
         return fc;

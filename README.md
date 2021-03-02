@@ -6,7 +6,7 @@ Ce projet est réalisé dans le cadre d'une licence 3 informatique, à l'UPVD. I
 
 ## Exigence du projet 
 
-> Attendus techniques
+Attendus techniques
 - Vous avez à développer une application comportant plusieurs activités (au moins 4, la principale inclue), répondant à un
 usage pratique, et appliquant les pratiques discutées en cours (persistance de données, utilisation des ressources pour la
 traduction, etc).
@@ -20,3 +20,4 @@ Electro calcul est le nom de mon application. Elle porte sur des calculs en elec
 L'utilisateur à le choix de faire un calcul sur un AOP non inverseur, un filtre passe bas et le calcul d'une résistance pour une led.
 
 ### Main
+

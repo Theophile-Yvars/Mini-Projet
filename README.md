@@ -16,7 +16,7 @@ attendues)
 
 ## Electro Calcul
 
-Electro calcul est le nom de mon application. Elle porte sur des calculs en electronique.
+> Electro calcul est le nom de mon application. Elle porte sur des calculs en electronique.
 L'utilisateur à le choix de faire un calcul sur un AOP non inverseur, un filtre passe bas et le calcul d'une résistance pour une led.
 
 ### Main

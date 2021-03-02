@@ -22,3 +22,15 @@ L'utilisateur à le choix de faire un calcul sur un AOP non inverseur, un filtre
 ### Main
 
 <div style="text-align:center"><img src="https://user-images.githubusercontent.com/79571637/109722911-a738ac80-7bad-11eb-9abd-fcdd6ad28b3b.jpg" width="200"></div>
+
+### Calcul d'un filtre passe-Bas
+<div style="text-align:center"><img src="https://user-images.githubusercontent.com/79571637/109723757-d26fcb80-7bae-11eb-837b-31d24a973c8d.jpg" width="200"></div>
+
+### Calcul de la resistance pour un led
+
+<div style="text-align:center"><img src="https://user-images.githubusercontent.com/79571637/109723953-18c52a80-7baf-11eb-9cf2-2b1fc40daaac.jpg" width="200"></div>
+
+### Calcul d'un Aop non-inverseur
+
+<div style="text-align:center"><img src="https://user-images.githubusercontent.com/79571637/109724101-51650400-7baf-11eb-932d-a56b266f0e94.jpg" width="200"></div>
+

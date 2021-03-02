@@ -21,4 +21,4 @@ L'utilisateur à le choix de faire un calcul sur un AOP non inverseur, un filtre
 
 ### Main
 
-<img src="https://user-images.githubusercontent.com/79571637/109722911-a738ac80-7bad-11eb-9abd-fcdd6ad28b3b.jpg" width="200">
+<div style="text-align:center"><img src="https://user-images.githubusercontent.com/79571637/109722911-a738ac80-7bad-11eb-9abd-fcdd6ad28b3b.jpg" width="200">

@@ -1,8 +1,7 @@
 <resources>
     <string name="app_name">Electro Calcul</string>
-    <string name="titre">Calcul electronique</string>
+    <string name="titre" translatable="false">Calcul electronique</string>
     <string name="titreLed">Calcul de la resistance</string>
-    <string name="titreFiltre">Calcul du filtre</string>
     <string name="titreAop">Calcul Aop</string>
     <string name="activite1">Filtre passe-bas</string>
     <string name="activite2">Led - Resistance</string>
@@ -13,10 +12,12 @@
     <string name="inputAop1">Saisir valeur</string>
     <string name="inputAop2">Saisir valeur</string>
     <string name="outputAop">Resultat</string>
+    <string name="titreFiltre">"Calcul du filtre "</string>
     <string name="textAop">Saisir elements de l\'aop</string>
     <string name="actionAop">Calcul de l\'AOP</string>
     <string name="actionFilre">Calcul du Filtre</string>
     <string name="inputAopVin">Saisir Ve</string>
+    <string name="ledVal">R</string>
 
     <string-array name="choix_Aop">
         <item>Selection</item>
@@ -31,5 +32,7 @@
         <item>C -> micro F</item>
         <item>Fc -> Freq Coupure</item>
     </string-array>
+
+
 
 </resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Electro Calcul</string>
+    <string name="titre">"Electronic calculation "</string>
+    <string name="titreLed">"Calculation of resistance "</string>
+    <string name="titreFiltre">"Filter calculation "</string>
+    <string name="titreAop">"Aop calculation "</string>
+    <string name="activite1">"Low pass filter "</string>
+    <string name="activite2">"Led - Resistance "</string>
+    <string name="activity3">"AOP non-reversing "</string>
+    <string name="inputLed">"Enter the voltage "</string>
+    <string name="outputLed">Result</string>
+    <string name="outputAop">Result</string>
+    <string name="actionLed">"Calculation of resistance "</string>
+    <string name="inputAop1">"Enter value "</string>
+    <string name="inputAop2">"Enter value "</string>
+    <string name="textAop">Enter Aop elements</string>
+    <string name="actionAop">Calculation of Aop</string>
+    <string name="actionFilre">"Filter calculation "</string>
+    <string name="inputAopVin">"Enter Ve "</string>
+
+</resources>

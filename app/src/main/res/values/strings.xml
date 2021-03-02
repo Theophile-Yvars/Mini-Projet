@@ -13,8 +13,10 @@
     <string name="outputAop">Resultat</string>
     <string name="textAop">Saisir elements de l\'aop</string>
     <string name="actionAop">Calcul de l\'AOP</string>
+    <string name="inputAopVin">Valeur de Vin</string>
 
     <string-array name="choix_Aop">
+        <item>Selection</item>
         <item>R1</item>
         <item>R2</item>
         <item>Gain</item>

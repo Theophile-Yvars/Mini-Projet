@@ -28,6 +28,6 @@ public class Led extends AppCompatActivity {
         final String inputStr = input.getText().toString();
         final float inputValue = Float.parseFloat(inputStr);
         final String outputStr = String.format("%.2f", CalculResLed.calculResistance(inputValue));
-        output.setText(outputStr);
+        output.setText(outputStr + " ohms");
    }
 }

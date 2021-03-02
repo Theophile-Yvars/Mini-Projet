@@ -4,21 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#009688"
     tools:context=".Filtre">
 
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="300dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="300dp"
         android:layout_marginEnd="16dp"
 
         android:layout_marginRight="16dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="32dp"
+        android:background="#00BCD4"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCalculFiltre"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -36,9 +38,9 @@
                 android:id="@+id/inputFiltre1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_marginEnd="0dp"
+                android:layout_marginEnd="2dp"
                 android:layout_marginRight="0dp"
-                android:layout_marginBottom="0dp"
+                android:layout_marginBottom="8dp"
                 android:layout_weight="1"
                 android:background="#9C27B0"
                 android:ems="10"
@@ -50,7 +52,10 @@
                 android:id="@+id/spinnerFiltre1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1" />
+                android:layout_marginLeft="2dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="#9C27B0" />
 
         </LinearLayout>
 
@@ -67,7 +72,8 @@
                 android:id="@+id/inputFiltre2"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_marginEnd="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="2dp"
                 android:layout_marginRight="0dp"
                 android:layout_marginBottom="0dp"
                 android:layout_weight="1"
@@ -81,7 +87,10 @@
                 android:id="@+id/spinnerFiltre2"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1" />
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:background="#9C27B0" />
 
         </LinearLayout>
 
@@ -103,16 +112,38 @@
     <Button
         android:id="@+id/buttonCalculFiltre"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="100dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="50dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:text="Button"
+        android:layout_marginBottom="16dp"
+        android:text="@string/actionFilre"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="272dp"
+        android:layout_height="171dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/filtre_passe_bas" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="280dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="@string/titreFiltre"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

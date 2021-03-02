@@ -1,32 +1,35 @@
 <resources>
     <string name="app_name">Electro Calcul</string>
     <string name="titre">Calcul electronique</string>
-    <string name="titreLed">Calcul resistance pour une led</string>
+    <string name="titreLed">Calcul de la resistance</string>
+    <string name="titreFiltre">Calcul du filtre</string>
+    <string name="titreAop">Calcul Aop</string>
     <string name="activite1">Filtre passe-bas</string>
     <string name="activite2">Led - Resistance</string>
     <string name="activity3">AOP non-inverseur</string>
     <string name="inputLed">Saisir le voltage</string>
-    <string name="outputLed">Valeur de la resistence</string>
+    <string name="outputLed">Resultat</string>
     <string name="actionLed">Calcul de la resistance</string>
     <string name="inputAop1">Saisir valeur</string>
     <string name="inputAop2">Saisir valeur</string>
     <string name="outputAop">Resultat</string>
     <string name="textAop">Saisir elements de l\'aop</string>
     <string name="actionAop">Calcul de l\'AOP</string>
-    <string name="inputAopVin">Valeur de Vin</string>
+    <string name="actionFilre">Calcul du Filtre</string>
+    <string name="inputAopVin">Saisir Ve</string>
 
     <string-array name="choix_Aop">
         <item>Selection</item>
-        <item>R1</item>
-        <item>R2</item>
+        <item>R1 -> ohms</item>
+        <item>R2 -> ohms</item>
         <item>Gain</item>
     </string-array>
 
     <string-array name="choix_Filtre">
         <item>Selection</item>
-        <item>R</item>
-        <item>C</item>
-        <item>Fc</item>
+        <item>R -> ohms</item>
+        <item>C -> micro F</item>
+        <item>Fc -> Freq Coupure</item>
     </string-array>
 
 </resources>

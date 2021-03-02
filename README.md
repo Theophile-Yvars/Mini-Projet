@@ -1,6 +1,7 @@
 # Mini-Projet
 
 ## Contexte
+<div class="hr" style="background-color:#FF6400;height:2px;"><br></div>
 
 Ce projet est réalisé dans le cadre d'une licence 3 informatique, à l'UPVD. Il répond à un mini projet en cours d'interphace graphique. C'est une premiere application pour nous exercer. Nous avions quelques consignes pour mettre en oeuvre cette application. 
 

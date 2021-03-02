@@ -21,4 +21,12 @@
         <item>R2</item>
         <item>Gain</item>
     </string-array>
+
+    <string-array name="choix_Filtre">
+        <item>Selection</item>
+        <item>R</item>
+        <item>C</item>
+        <item>Fc</item>
+    </string-array>
+
 </resources>

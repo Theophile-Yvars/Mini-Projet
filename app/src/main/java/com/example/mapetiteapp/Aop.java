@@ -99,71 +99,70 @@ public class Aop extends AppCompatActivity {
     }
 
     void calculAop(View sender){
-        R1 = 0;
-        R2 = 0;
-        Vin = 0;
-        gain = 0;
+        try {
+            String outputStr2 = null;
+            final String inputStr = input1.getText().toString();
+            Vin = Float.parseFloat(inputStr);
+            float vout = 0;
 
-        String outputStr2 = null;
-        final String inputStr = input1.getText().toString();
-        Vin = Float.parseFloat(inputStr);
-        float vout = 0;
+            final String inputStr1 = input2.getText().toString();
+            final String inputStr2 = input3.getText().toString();
 
-        final String inputStr1 = input2.getText().toString();
-        final String inputStr2 = input3.getText().toString();
+            float val1 = Float.parseFloat(inputStr1);
+            float val2 = Float.parseFloat(inputStr2);
 
-        float val1 = Float.parseFloat(inputStr1);
-        float val2 = Float.parseFloat(inputStr2);
+            Log.i("pos1", String.valueOf(pos1));
+            Log.i("pos2", String.valueOf(pos2));
 
-        Log.i("pos1", String.valueOf(pos1));
-        Log.i("pos2", String.valueOf(pos2));
+            if (pos1 == 1)
+                R1 = val1;
+            if (pos1 == 2)
+                R2 = val1;
+            if (pos1 == 3)
+                gain = val1;
 
-        if(pos1 == 1)
-            R1 = val1;
-        if(pos1 == 2)
-            R2 = val1;
-        if(pos1 == 3)
-            gain = val1;
+            if (pos2 == 1)
+                R1 = val2;
+            if (pos2 == 2)
+                R2 = val2;
+            if (pos2 == 3)
+                gain = val2;
 
-        if(pos2 == 1)
-            R1 = val2;
-        if(pos2 == 2)
-            R2 = val2;
-        if(pos2 == 3)
-            gain = val2;
+            if (R2 == 0) {
+                R2 = CalculAop.calculR2(gain, R1);
+                outputStr2 = "R2 : " + R2 + " ohms";
+            }
+            if (R1 == 0) {
+                R1 = CalculAop.calculR1(gain, R2);
+                outputStr2 = "R1 : " + R1 + " ohms";
+            }
+            if (gain == 0) {
+                gain = CalculAop.calculGain(R1, R2);
+                vout = CalculAop.calculVout(gain, Vin);
+                outputStr2 = "Gain : " + gain + ". Vout : " + vout + "V";
+            }
 
-        if(R2 == 0){
-            R2 = CalculAop.calculR2(gain,R1);
-            outputStr2 = "R2 : " + R2 + " ohms";
+            if (pos1 == pos2) {
+                outputStr2 = "Erreur saisie";
+            }
+
+            output.setText(outputStr2);
+
+            Log.i("R1", String.valueOf(R1));
+            Log.i("R2", String.valueOf(R2));
+            Log.i("gain", String.valueOf(gain));
+            Log.i("Vin", String.valueOf(Vin));
+            Log.i("Vout", String.valueOf(vout));
+            Log.i("valeur", outputStr2);
+
+            R1 = 0;
+            R2 = 0;
+            Vin = 0;
+            gain = 0;
+            vout = 0;
+        } catch(Exception e){
+            output.setText("Invalid input");
         }
-        if(R1 == 0){
-            R1 = CalculAop.calculR1(gain,R2);
-            outputStr2 = "R1 : " + R1 + " ohms";
-        }
-        if(gain == 0){
-            gain = CalculAop.calculGain(R1,R2);
-            vout = CalculAop.calculVout(gain,Vin);
-            outputStr2 = "Gain : " + gain + ". Vout : " + vout + "V";
-        }
-
-        if(pos1 == pos2){
-            outputStr2 = "Erreur saisie";
-        }
-
-        output.setText(outputStr2);
-
-        Log.i("R1", String.valueOf(R1));
-        Log.i("R2", String.valueOf(R2));
-        Log.i("gain", String.valueOf(gain));
-        Log.i("Vin", String.valueOf(Vin));
-        Log.i("Vout", String.valueOf(vout));
-        Log.i("valeur",outputStr2);
-
-        R1 = 0;
-        R2 = 0;
-        Vin = 0;
-        gain = 0;
-        vout = 0;
     }
 
 }

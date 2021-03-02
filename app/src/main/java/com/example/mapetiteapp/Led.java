@@ -31,21 +31,9 @@ public class Led extends AppCompatActivity {
         Log.i("output : ",output.getText().toString());
 
         Button buttonCalculRes = findViewById(R.id.calculRes);
-        buttonCalculRes.setOnClickListener(this::calculRes);
-/*
-        buttonCalculRes.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                final String inputStr = input.getText().toString();
-                final float inputValue = Float.parseFloat(inputStr);
-                final String outputStr = String.format("%.2f", CalculResLed.calculResistance(inputValue));
-                output.setText(outputStr + " ohms");
-                afficheR = (int) CalculResLed.calculResistance(inputValue);
 
-                ledR.setText("Valeur : "+afficheR);
-            }
-        });
-*/
+        buttonCalculRes.setOnClickListener(this::calculRes);
+
         SharedPreferences preferences = getPreferences(MODE_PRIVATE);
         SharedPreferences.Editor editor = preferences.edit();
         editor.putInt("value",afficheR);
@@ -53,12 +41,16 @@ public class Led extends AppCompatActivity {
     }
 
    void calculRes(View sender){
-        final String inputStr = input.getText().toString();
-        final float inputValue = Float.parseFloat(inputStr);
-        final String outputStr = String.format("%.2f", CalculResLed.calculResistance(inputValue));
-        output.setText(outputStr + " ohms");
-        afficheR = (int) CalculResLed.calculResistance(inputValue);
-        TextView ledR = findViewById(R.id.affLed);
-        ledR.setText("R : "+afficheR);
-   }
+        try {
+            final String inputStr = input.getText().toString();
+            final float inputValue = Float.parseFloat(inputStr);
+            final String outputStr = String.format("%.2f", CalculResLed.calculResistance(inputValue));
+            output.setText(outputStr + " ohms");
+            afficheR = (int) CalculResLed.calculResistance(inputValue);
+            TextView ledR = findViewById(R.id.affLed);
+            ledR.setText("R : " + afficheR);
+        } catch(Exception e){
+            output.setText("Invalid input");
+        }
+    }
 }

@@ -79,60 +79,58 @@ public class Filtre extends AppCompatActivity {
     }
 
     void calculFiltre(View sender){
-        /*
-        pos
-        1 = R
-        2 = C
-        3 = Fc
-         */
-        String outputStr = null;
+        try {
+            String outputStr = null;
 
-        final String inputStr1 = input1.getText().toString();
-        final String inputStr2 = input2.getText().toString();
+            final String inputStr1 = input1.getText().toString();
+            final String inputStr2 = input2.getText().toString();
 
-        float val1 = Float.parseFloat(inputStr1);
-        float val2 = Float.parseFloat(inputStr2);
+            float val1 = Float.parseFloat(inputStr1);
+            float val2 = Float.parseFloat(inputStr2);
 
-        if(pos1 == 1)
-            r = val1;
-        if(pos1 == 2)
-            C = val1;
-        if(pos1 == 3)
-            Fc = val1;
+            if (pos1 == 1)
+                r = val1;
+            if (pos1 == 2)
+                C = val1;
+            if (pos1 == 3)
+                Fc = val1;
 
-        if(pos2 == 1)
-            r = val2;
-        if(pos2 == 2)
-            C = val2;
-        if(pos2 == 3)
-            Fc = val2;
+            if (pos2 == 1)
+                r = val2;
+            if (pos2 == 2)
+                C = val2;
+            if (pos2 == 3)
+                Fc = val2;
 
-        if(r == 0){
-            r = CalculFiltre.calculR(C,Fc);
-            outputStr = "R : " + r + " ohms";
+            if (r == 0) {
+                r = CalculFiltre.calculR(C, Fc);
+                outputStr = "R : " + r + " ohms";
+            }
+            if (C == 0) {
+                C = CalculFiltre.calculC(r, Fc);
+                outputStr = "C : " + C + " microF";
+            }
+            if (Fc == 0) {
+                Fc = CalculFiltre.calculFc(r, C);
+                outputStr = "Fc : " + Fc + " Hz";
+            }
+
+            if (pos1 == pos2) {
+                outputStr = "Erreur saisie";
+            }
+
+            Log.i("R", String.valueOf(r));
+            Log.i("C", String.valueOf(C));
+            Log.i("Fc", String.valueOf(Fc));
+            Log.i("valeur", outputStr);
+
+            output.setText(outputStr);
+
+            r = 0;
+            C = 0;
+            Fc = 0;
+        } catch(Exception e){
+            output.setText("Invalid input");
         }
-        if(C == 0){
-            C = CalculFiltre.calculC(r,Fc);
-            outputStr = "C : " + C + " microF";
-        }
-        if(Fc == 0){
-            Fc = CalculFiltre.calculFc(r,C);
-            outputStr = "Fc : " + Fc + " Hz";
-        }
-
-        if(pos1 == pos2){
-            outputStr = "Erreur saisie";
-        }
-
-        Log.i("R", String.valueOf(r));
-        Log.i("C", String.valueOf(C));
-        Log.i("Fc", String.valueOf(Fc));
-        Log.i("valeur",outputStr);
-
-        output.setText(outputStr);
-
-        r = 0;
-        C = 0;
-        Fc = 0;
     }
 }
